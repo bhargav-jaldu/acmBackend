@@ -11,6 +11,10 @@ const contactForm = require('./routes/contacForm')
 
 app.use('/', contactForm);
 
+app.get('/', (req, res) => {
+    console.log("ACM");
+})
+
 app.listen('3001', () => {
     console.log('Server running on port 3001')
 })
